@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class LineComparisonUC2 {
 	public static void main(String[] args) {
-		double lengthOfLine1 = getLengthOfLine();
+		Double lengthOfLine1 = getLengthOfLine();
 		System.out.println("Length of line 1 is :" + lengthOfLine1);
 
-		double lengthOfLine2 = getLengthOfLine();
+		Double lengthOfLine2 = getLengthOfLine();
 		System.out.println("Length of line 2  is :" + lengthOfLine2);
-		int result = Double.compare(lengthOfLine1, lengthOfLine2);
-		if (result == 0) {
+		//int result = Double.compare(lengthOfLine1, lengthOfLine2);
+		if (lengthOfLine1.equals(lengthOfLine2)) {
 			System.out.println("Two lines are equal");
 		} else {
 			System.out.println("Two lines are not equal");
